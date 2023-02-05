@@ -14,6 +14,7 @@
 #Пример:
 #Ввод: ноутбук
 #Вывод: 12
+
 points = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ', 4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
-text = input('Введите слово:').upper() 
-print(f'Стоимость слова: {sum([k for i in text for k, v in points.items() if i in v])}')
+word = input('Введите слово:').upper() 
+print(f'Стоимость слова: {sum([a for i in word for a, b in points.items() if i in b])}')
